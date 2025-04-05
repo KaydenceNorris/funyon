@@ -1,5 +1,4 @@
 body {
-    width: 95%;
     margin: auto;
     background-color: #F9F5E3;
     color: #4B4A67;
@@ -20,6 +19,8 @@ nav a {
     text-decoration: none;
     padding-right: 20px;
     padding-left: 15px;
+    font-style: italic;
+    font-weight: bold;
 }
 
 h1 {
@@ -27,20 +28,77 @@ h1 {
     padding-top: 0px;
     font-style: italic;
     border-bottom: 3px #4B4A67 dotted ;
+    width: 95%;
 }
 
 #name {
+    width: 100%;
     background-color: #B8b8ff;
     color: #d88373;
     margin: auto;
     border-bottom: 5px #4B4A67 solid;
 }
 
+#motto {
+    display: none;
+}
+
 img {
-    margin: auto;
     width: 90%;
+    margin: 0px 15px;
 }
 
 footer {
     display: none;
+}
+
+p {
+    color: #4B4A67;
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    padding: 5px;
+}
+
+@media (min-width: 500px) {
+    footer {
+        display: inline-block;
+        background-color: #4B4A67;
+        padding: 8px;
+        width: 100%;
+        font-size: 8px;
+        text-align: center;
+    }
+
+    footer p {
+        color: #F9F5E3;
+    }
+
+    img {
+        width: 95%;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    nav a {
+        margin: 0px;
+        font-size: 20px;
+    }
+
+    nav a:nth-child(1){
+        padding-left: 0px;
+    }
+
+    nav {
+        padding: 15px;
+    }
+
+    #motto {
+        display: inline;
+        font-size: 18px;
+    }
+
 }
