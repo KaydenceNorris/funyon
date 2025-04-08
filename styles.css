@@ -43,6 +43,10 @@ h1 {
     display: none;
 }
 
+#hiddenim {
+    display: none;
+}
+
 img {
     width: 90%;
     margin: 0px 15px;
@@ -101,4 +105,18 @@ p {
         font-size: 18px;
     }
 
+}
+
+@media (min-width: 768px){
+
+    p {
+        font-size: 20px;
+    }
+
+    #hiddenim {
+        display: block;
+        margin: auto;
+        height: 350px;
+    }
+    
 }
